@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Akronim|Trade+Winds|Raleway:300,500,600,900&display=swap");
+@font-face {
+  font-family: "Renadar";
+  src: local(Renadar);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  color: #707070;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 100px 0 100px;
+}
+nav ul {
+  padding: 40px 0;
+}
+nav ul,
+.main-info-section,
+.work-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.navbar {
+  justify-content: space-between;
+  height: 12%;
+  display: flex;
+  flex-direction: row;
+
+  font-family: "Raleway";
+  background-color: #181818;
+}
+.Namelogo {
+  font-family: "Renadar";
+  font-size: 4rem;
+  font-weight: lighter;
+  color: #ff4848;
+}
+
+.containercenter2 {
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 35px;
+  font-weight: lighter;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.containercenter {
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: lighter;
+  margin-left: 18%;
+}
+body {
+  background-color: #252525;
+  background-size: 100%;
+  margin: 0cm;
+}
+.block-1 {
+  background-image: url("./Back.jpg");
+  background-color: #252525;
+  display: block;
+  height: 100vh;
+  background-size: cover;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+header h1,
+header a,
+.text p,
+.about h1,
+.skills h1,
+.work h1 {
+  color: #707070;
+}
+
+li {
+  list-style: none;
+  margin-left: 50px;
+  margin-bottom: 8px;
+}
+#littleskills {
+  font-size: 15px;
+  /*word-spacing: 10px; */
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.text {
+  margin-top: 120px;
+}
+
+.text h1 {
+  color: #fff;
+  font-size: 3rem;
+  cursor: context-menu;
+}
+.text p {
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-size: 40px;
+}
+.text a {
+  padding: 15px;
+  background-color: none;
+  border: 2px solid #ed5565;
+  color: #ed5565;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  position: relative;
+  top: 88px;
+  overflow: hidden;
+  transition: 0.5s;
+  display: inline-block;
+  border-radius: 6px;
+}
+.text a:hover {
+  color: #fff;
+}
+.text a::before {
+  content: "";
+  background-color: #ed5565;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.text a:hover::before {
+  height: 100%;
+}
+.about {
+  height: 100vh;
+  margin-top: 80px;
+}
+.about h1,
+.work h1,
+.skills h1 {
+  font-size: 4.5rem;
+  z-index: 0;
+  opacity: 1;
+  margin: 1rem;
+}
+.about-me-info {
+  max-width: 900px;
+  background-color: #252627;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
+  padding: 50px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.about-me-info2 {
+  margin-top: 2%;
+  max-width: 900px;
+  background-color: #252627;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
+  padding: 50px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.skills{
+  height: 80vh;
+  margin-top: 60px;
+}
+
+.confoo{
+  text-align: center;
+}
+
+input.button{
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid #ed5565;
+  color: #ed5565;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+input.email{
+  padding: 15px;
+  background-color: none;
+  border: 2px solid #ed5565;
+  color: #ed5565;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  display: inline-block;
+  border-radius: 6px;
+  width: 450px;
+}
+
+.farmcl{
+ display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  {
+    width: 100%;
+  }
